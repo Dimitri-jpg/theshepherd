@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Hilly_Prop_Camp_Campfire.obj-9efb0276a84ed5d363f469db9b6c0683.mesh"
+
+[deps]
+
+files=[ "res://.import/Hilly_Prop_Camp_Campfire.obj-9efb0276a84ed5d363f469db9b6c0683.mesh" ]
+
+source_file="res://assets/terrain/modular_terrain_collection/Hilly_Prop_Camp_Campfire.obj"
+dest_files=[ "res://.import/Hilly_Prop_Camp_Campfire.obj-9efb0276a84ed5d363f469db9b6c0683.mesh", "res://.import/Hilly_Prop_Camp_Campfire.obj-9efb0276a84ed5d363f469db9b6c0683.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

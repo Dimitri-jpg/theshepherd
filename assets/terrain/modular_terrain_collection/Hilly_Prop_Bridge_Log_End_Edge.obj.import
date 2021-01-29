@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Hilly_Prop_Bridge_Log_End_Edge.obj-9f7a4d2e09e047ebe9d4ac50af3f6d7a.mesh"
+
+[deps]
+
+files=[ "res://.import/Hilly_Prop_Bridge_Log_End_Edge.obj-9f7a4d2e09e047ebe9d4ac50af3f6d7a.mesh" ]
+
+source_file="res://assets/terrain/modular_terrain_collection/Hilly_Prop_Bridge_Log_End_Edge.obj"
+dest_files=[ "res://.import/Hilly_Prop_Bridge_Log_End_Edge.obj-9f7a4d2e09e047ebe9d4ac50af3f6d7a.mesh", "res://.import/Hilly_Prop_Bridge_Log_End_Edge.obj-9f7a4d2e09e047ebe9d4ac50af3f6d7a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Hilly_Terrain_Path_Hill_Gentle_Plain_Center.obj-88a01a0d677543f920108fc2f2da8b9c.mesh"
+
+[deps]
+
+files=[ "res://.import/Hilly_Terrain_Path_Hill_Gentle_Plain_Center.obj-88a01a0d677543f920108fc2f2da8b9c.mesh" ]
+
+source_file="res://assets/terrain/modular_terrain_collection/Hilly_Terrain_Path_Hill_Gentle_Plain_Center.obj"
+dest_files=[ "res://.import/Hilly_Terrain_Path_Hill_Gentle_Plain_Center.obj-88a01a0d677543f920108fc2f2da8b9c.mesh", "res://.import/Hilly_Terrain_Path_Hill_Gentle_Plain_Center.obj-88a01a0d677543f920108fc2f2da8b9c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

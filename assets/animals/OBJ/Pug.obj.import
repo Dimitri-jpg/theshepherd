@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Pug.obj-2b8726d7d704852a48b8433a4d83c48b.mesh"
+
+[deps]
+
+files=[ "res://.import/Pug.obj-2b8726d7d704852a48b8433a4d83c48b.mesh" ]
+
+source_file="res://assets/animals/OBJ/Pug.obj"
+dest_files=[ "res://.import/Pug.obj-2b8726d7d704852a48b8433a4d83c48b.mesh", "res://.import/Pug.obj-2b8726d7d704852a48b8433a4d83c48b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

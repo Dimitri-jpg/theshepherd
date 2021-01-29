@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cave_Prop_Minecart_1.obj-3aa4981c8c67f81239f05dfd10b0c560.mesh"
+
+[deps]
+
+files=[ "res://.import/Cave_Prop_Minecart_1.obj-3aa4981c8c67f81239f05dfd10b0c560.mesh" ]
+
+source_file="res://assets/terrain/modular_terrain_collection/Cave_Prop_Minecart_1.obj"
+dest_files=[ "res://.import/Cave_Prop_Minecart_1.obj-3aa4981c8c67f81239f05dfd10b0c560.mesh", "res://.import/Cave_Prop_Minecart_1.obj-3aa4981c8c67f81239f05dfd10b0c560.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

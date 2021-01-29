@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Beach_Prop_Tree_Palm_3.obj-383e23b5bd9a94416ad7d4d80808aaa4.mesh"
+
+[deps]
+
+files=[ "res://.import/Beach_Prop_Tree_Palm_3.obj-383e23b5bd9a94416ad7d4d80808aaa4.mesh" ]
+
+source_file="res://assets/terrain/modular_terrain_collection/Beach_Prop_Tree_Palm_3.obj"
+dest_files=[ "res://.import/Beach_Prop_Tree_Palm_3.obj-383e23b5bd9a94416ad7d4d80808aaa4.mesh", "res://.import/Beach_Prop_Tree_Palm_3.obj-383e23b5bd9a94416ad7d4d80808aaa4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

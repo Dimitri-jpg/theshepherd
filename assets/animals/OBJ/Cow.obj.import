@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cow.obj-ac783fe129fd5872dbe946994ccc7289.mesh"
+
+[deps]
+
+files=[ "res://.import/Cow.obj-ac783fe129fd5872dbe946994ccc7289.mesh" ]
+
+source_file="res://assets/animals/OBJ/Cow.obj"
+dest_files=[ "res://.import/Cow.obj-ac783fe129fd5872dbe946994ccc7289.mesh", "res://.import/Cow.obj-ac783fe129fd5872dbe946994ccc7289.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

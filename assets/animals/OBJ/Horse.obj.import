@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Horse.obj-c7bb10b986d3b060a33953a00115c6f4.mesh"
+
+[deps]
+
+files=[ "res://.import/Horse.obj-c7bb10b986d3b060a33953a00115c6f4.mesh" ]
+
+source_file="res://assets/animals/OBJ/Horse.obj"
+dest_files=[ "res://.import/Horse.obj-c7bb10b986d3b060a33953a00115c6f4.mesh", "res://.import/Horse.obj-c7bb10b986d3b060a33953a00115c6f4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

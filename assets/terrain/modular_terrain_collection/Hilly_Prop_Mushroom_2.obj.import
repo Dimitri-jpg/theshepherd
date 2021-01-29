@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Hilly_Prop_Mushroom_2.obj-7c688afb88eff903b866ae3905f22e4a.mesh"
+
+[deps]
+
+files=[ "res://.import/Hilly_Prop_Mushroom_2.obj-7c688afb88eff903b866ae3905f22e4a.mesh" ]
+
+source_file="res://assets/terrain/modular_terrain_collection/Hilly_Prop_Mushroom_2.obj"
+dest_files=[ "res://.import/Hilly_Prop_Mushroom_2.obj-7c688afb88eff903b866ae3905f22e4a.mesh", "res://.import/Hilly_Prop_Mushroom_2.obj-7c688afb88eff903b866ae3905f22e4a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

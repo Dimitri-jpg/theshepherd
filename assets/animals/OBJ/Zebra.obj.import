@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Zebra.obj-7db0554529f82402f1b7511cd82f1637.mesh"
+
+[deps]
+
+files=[ "res://.import/Zebra.obj-7db0554529f82402f1b7511cd82f1637.mesh" ]
+
+source_file="res://assets/animals/OBJ/Zebra.obj"
+dest_files=[ "res://.import/Zebra.obj-7db0554529f82402f1b7511cd82f1637.mesh", "res://.import/Zebra.obj-7db0554529f82402f1b7511cd82f1637.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
