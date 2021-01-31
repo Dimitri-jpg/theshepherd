@@ -10,11 +10,11 @@ height = 1.5
 radius = 0.75
 mid_height = 1.5
 
-[sub_resource type="SpatialMaterial" id=4]
+[sub_resource type="SpatialMaterial" id=3]
 albedo_color = Color( 0.0156863, 0, 0, 1 )
 
-[sub_resource type="CubeMesh" id=3]
-material = SubResource( 4 )
+[sub_resource type="CubeMesh" id=4]
+material = SubResource( 3 )
 size = Vector3( 0.2, 0.1, 1 )
 
 [node name="KinematicBody" type="KinematicBody"]
@@ -25,7 +25,7 @@ transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0
 shape = SubResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, -0.0113041, 0.0157776, 0.00245386 )
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, -0.00794252, 0.0239244, 0.00739151 )
 mesh = SubResource( 2 )
 material/0 = null
 
@@ -33,7 +33,7 @@ material/0 = null
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, -0.5 )
 
 [node name="MeshInstance" type="MeshInstance" parent="PointerPivot"]
-mesh = SubResource( 3 )
+mesh = SubResource( 4 )
 material/0 = null
 
 [node name="Pivot" type="Spatial" parent="."]
