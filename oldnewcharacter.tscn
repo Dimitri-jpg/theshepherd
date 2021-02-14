@@ -2,13 +2,17 @@
 
 [ext_resource path="res://character.gd" type="Script" id=1]
 [ext_resource path="res://assets/farmer/Gladiator.fbx" type="PackedScene" id=2]
-[ext_resource path="res://Farmer hat.png" type="Texture" id=3]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.75
 height = 0.7
 
-[sub_resource type="CubeMesh" id=2]
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.0156863, 0, 0, 1 )
+
+[sub_resource type="CubeMesh" id=3]
+material = SubResource( 2 )
+size = Vector3( 0.2, 0.1, 1 )
 
 [node name="KinematicBody" type="KinematicBody"]
 script = ExtResource( 1 )
@@ -17,25 +21,18 @@ script = ExtResource( 1 )
 transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 1, 0 )
 shape = SubResource( 1 )
 
+[node name="PointerPivot" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, -0.5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="PointerPivot"]
+mesh = SubResource( 3 )
+material/0 = null
+
 [node name="Pivot" type="Spatial" parent="."]
 
 [node name="Camera" type="Camera" parent="Pivot"]
 transform = Transform( 1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 3.17642, 5.37528 )
-cull_mask = 1048573
 fov = 69.1239
 
 [node name="Gladiator" parent="." instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0, 0, 0 )
-
-[node name="MapPlayer" type="Sprite3D" parent="."]
-transform = Transform( -4.99999, 0, -0.0111695, 0, 1, 0, 0.0111695, 0, -4.99999, 0.00231934, 4.0821, -0.0135841 )
-layers = 2147483650
-axis = 1
-texture = ExtResource( 3 )
-
-[node name="PointerPivot" type="Spatial" parent="."]
-
-[node name="MeshInstance" type="MeshInstance" parent="PointerPivot"]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.5, 0, 1, -0.6 )
-mesh = SubResource( 2 )
-material/0 = null
+transform = Transform( -1.5, 0, -5.84122e-07, 0, 1.5, 0, 5.84122e-07, 0, -1.5, 0, 0, 0 )

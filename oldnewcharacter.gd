@@ -1,7 +1,6 @@
 extends KinematicBody
 onready var pivot=$Pivot
 onready var pointerpivot=$PointerPivot
-class_name FARMER
 
 const g=9.81
 const jump_height=8
@@ -15,7 +14,7 @@ var direction=Vector3()
 var velocity=Vector3()
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE) #CONFINED) #CAPTURED) 
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED) 
 
 func _input(event):
 	if Input.is_action_just_pressed("ui_cancel"):

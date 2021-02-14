@@ -1,0 +1,89 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://MiniMap.gd" type="Script" id=1]
+[ext_resource path="res://Frame for the game.png" type="Texture" id=2]
+[ext_resource path="res://assets/pattern_blueprintPaper.png" type="Texture" id=3]
+[ext_resource path="res://Farmer hat.png" type="Texture" id=4]
+[ext_resource path="res://cow.png" type="Texture" id=5]
+[ext_resource path="res://sheep.png" type="Texture" id=6]
+
+[node name="MiniMap" type="MarginContainer"]
+margin_left = 576.535
+margin_top = 354.762
+margin_right = 817.535
+margin_bottom = 630.762
+custom_constants/margin_right = 5
+custom_constants/margin_top = 5
+custom_constants/margin_left = 5
+custom_constants/margin_bottom = 5
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Frame" type="NinePatchRect" parent="."]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 236.0
+margin_bottom = 271.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 271.212, -5, 311.788, 71.892 )
+patch_margin_left = 122
+patch_margin_top = 198
+patch_margin_right = 95
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 236.0
+margin_bottom = 271.0
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 20
+
+[node name="Grid" type="TextureRect" parent="MarginContainer"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 211.0
+margin_bottom = 246.0
+texture = ExtResource( 3 )
+stretch_mode = 2
+
+[node name="Farmer" type="Sprite" parent="MarginContainer/Grid" groups=[
+"minimap_objects",
+]]
+position = Vector2( 83.0938, 173.385 )
+scale = Vector2( 0.14476, 0.14476 )
+texture = ExtResource( 4 )
+
+[node name="Cow" type="Sprite" parent="MarginContainer/Grid" groups=[
+"minimap_objects",
+]]
+visible = false
+position = Vector2( 133.974, 37.1558 )
+scale = Vector2( 0.148062, 0.148062 )
+texture = ExtResource( 5 )
+
+[node name="Sheep" type="Sprite" parent="MarginContainer/Grid" groups=[
+"minimap_objects",
+]]
+visible = false
+position = Vector2( 34.0974, 116.369 )
+scale = Vector2( 0.204944, 0.206376 )
+texture = ExtResource( 6 )
+
+[node name="Viewport" type="Viewport" parent="MarginContainer"]
+size = Vector2( 256, 256 )
+transparent_bg = true
+
+[node name="Camera" type="Camera" parent="MarginContainer/Viewport"]
+cull_mask = 2
+projection = 1
+size = 40.0
+
+[node name="MiniMap frame" type="Sprite" parent="."]
+position = Vector2( 122.522, 139.928 )
+scale = Vector2( 0.799506, 0.827393 )
+texture = ExtResource( 2 )
+[connection signal="gui_input" from="." to="." method="_on_MiniMap_gui_input"]

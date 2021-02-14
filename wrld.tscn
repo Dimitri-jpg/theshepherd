@@ -1,13 +1,14 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://addons/zylann.hterrain/hterrain_texture_set.gd" type="Script" id=1]
 [ext_resource path="res://sheep.tscn" type="PackedScene" id=2]
-[ext_resource path="res://newcharacter.tscn" type="PackedScene" id=3]
 [ext_resource path="res://cow.tscn" type="PackedScene" id=4]
 [ext_resource path="res://slot0_normal_roughness.packed_tex" type="Texture" id=5]
 [ext_resource path="res://slot0_albedo_bump.packed_tex" type="Texture" id=6]
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=7]
 [ext_resource path="res://assets/grin/data.hterrain" type="Resource" id=8]
+[ext_resource path="res://assets/grass/FinalGrassPack2.fbx" type="PackedScene" id=9]
+[ext_resource path="res://random_obj.gd" type="Script" id=10]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 1 )
@@ -15,6 +16,7 @@ mode = 0
 textures = [ [ ExtResource( 6 ) ], [ ExtResource( 5 ) ] ]
 
 [node name="wrld" type="Spatial"]
+script = ExtResource( 10 )
 
 [node name="HTerrain" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0775871, -0.101639, 0.0342979 )
@@ -33,11 +35,11 @@ shader_params/u_depth_blending = true
 shader_params/u_triplanar = false
 shader_params/u_tile_reduction = Plane( 0, 0, 0, 0 )
 
-[node name="human" parent="." instance=ExtResource( 3 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 15, 0, 35 )
-
 [node name="cow" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.089, 0, 20.843 )
 
 [node name="sheep" parent="." instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 25.876, 0, 62.706 )
+
+[node name="FinalGrassPack2" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 100 )
